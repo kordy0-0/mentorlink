@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Mentors - Find Your Perfect Guide</title>
+    <link rel="stylesheet" href="./mentors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MentorLink</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                <li><a href="#mentors" class="nav-link">Mentors</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Perfect <span class="highlight">Mentor</span></h1>
+                <p class="hero-description">
+                    Connect with experienced professionals who can guide your career journey. 
+                    Explore our diverse community of mentors across various industries and expertise levels.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#mentors" class="btn btn-primary">Explore Mentors</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-rocket"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentors Section -->
+    <section class="mentors" id="mentors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Our Mentors</h2>
+                <p>Discover experienced professionals ready to guide your journey</p>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search mentors by name or expertise..." id="searchInput">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tech">Technology</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                </div>
+            </div>
+
+            <!-- Mentors Grid -->
+            <div class="mentors-grid">
+                <div class="mentor-card" data-category="tech">
+                    <div class="mentor-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" alt="Sarah Johnson">
+                        <div class="mentor-status online"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="mentor-title">Senior Software Engineer</p>
+                        <p class="mentor-company">Google</p>
+                        <div class="mentor-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>50+ mentees</span>
+                            </div>
+                        </div>
+                        <p class="mentor-bio">Passionate about helping developers grow their skills in modern web technologies.</p>
+                        <div class="mentor-actions">
+                            <button class="btn btn-primary">Connect</button>
+                            <button class="btn btn-secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentor-card" data-category="business">
+                    <div class="mentor-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" alt="Michael Chen">
+                        <div class="mentor-status online"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Michael Chen</h3>
+                        <p class="mentor-title">Product Manager</p>
+                        <p class="mentor-company">Microsoft</p>
+                        <div class="mentor-skills">
+                            <span class="skill-tag">Strategy</span>
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>35+ mentees</span>
+                            </div>
+                        </div>
+                        <p class="mentor-bio">Experienced in scaling products from startup to enterprise level.</p>
+                        <div class="mentor-actions">
+                            <button class="btn btn-primary">Connect</button>
+                            <button class="btn btn-secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentor-card" data-category="design">
+                    <div class="mentor-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" alt="Emily Rodriguez">
+                        <div class="mentor-status offline"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Emily Rodriguez</h3>
+                        <p class="mentor-title">UX Design Lead</p>
+                        <p class="mentor-company">Adobe</p>
+                        <div class="mentor-skills">
+                            <span class="skill-tag">UI/UX</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Research</span>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>40+ mentees</span>
+                            </div>
+                        </div>
+                        <p class="mentor-bio">Specializing in user-centered design and design systems.</p>
+                        <div class="mentor-actions">
+                            <button class="btn btn-primary">Connect</button>
+                            <button class="btn btn-secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentor-card" data-category="marketing">
+                    <div class="mentor-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" alt="David Kim">
+                        <div class="mentor-status online"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3>David Kim</h3>
+                        <p class="mentor-title">Marketing Director</p>
+                        <p class="mentor-company">HubSpot</p>
+                        <div class="mentor-skills">
+                            <span class="skill-tag">Digital Marketing</span>
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">Content</span>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>25+ mentees</span>
+                            </div>
+                        </div>
+                        <p class="mentor-bio">Expert in growth marketing and brand development strategies.</p>
+                        <div class="mentor-actions">
+                            <button class="btn btn-primary">Connect</button>
+                            <button class="btn btn-secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentor-card" data-category="tech">
+                    <div class="mentor-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" alt="Lisa Wang">
+                        <div class="mentor-status online"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Lisa Wang</h3>
+                        <p class="mentor-title">Data Scientist</p>
+                        <p class="mentor-company">Netflix</p>
+                        <div class="mentor-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>30+ mentees</span>
+                            </div>
+                        </div>
+                        <p class="mentor-bio">Passionate about AI/ML and helping others break into data science.</p>
+                        <div class="mentor-actions">
+                            <button class="btn btn-primary">Connect</button>
+                            <button class="btn btn-secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentor-card" data-category="business">
+                    <div class="mentor-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" alt="James Thompson">
+                        <div class="mentor-status offline"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3>James Thompson</h3>
+                        <p class="mentor-title">Startup Founder</p>
+                        <p class="mentor-company">TechCorp</p>
+                        <div class="mentor-skills">
+                            <span class="skill-tag">Entrepreneurship</span>
+                            <span class="skill-tag">Fundraising</span>
+                            <span class="skill-tag">Strategy</span>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>20+ mentees</span>
+                            </div>
+                        </div>
+                        <p class="mentor-bio">Serial entrepreneur with 3 successful exits. Love helping new founders.</p>
+                        <div class="mentor-actions">
+                            <button class="btn btn-primary">Connect</button>
+                            <button class="btn btn-secondary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose Our Mentors?</h2>
+                    <p>Our carefully vetted mentors bring years of industry experience and a passion for helping others succeed. Each mentor is committed to providing personalized guidance tailored to your unique goals.</p>
+                    <p>Whether you're looking to advance in your current role, switch careers, or start your own business, our mentors have the expertise to guide you every step of the way.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <p>Expert Mentors</p>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10k+</div>
+                            <p>Successful Connections</p>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">1-on-1 Sessions</div>
+                    <div class="tech-item">Group Workshops</div>
+                    <div class="tech-item">Career Planning</div>
+                    <div class="tech-item">Skill Development</div>
+                    <div class="tech-item">Industry Insights</div>
+                    <div class="tech-item">Network Building</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started Today</h2>
+                <p>Ready to connect with a mentor? Reach out to us and we'll help you find the perfect match.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>mentors@mentorhub.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Support Hours</h4>
+                            <p>Mon-Fri: 9AM-6PM PST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Your Interest</option>
+                                <option value="tech">Technology</option>
+                                <option value="business">Business</option>
+                                <option value="design">Design</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your goals and what you're looking for in a mentor..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MentorHub</h3>
+                    <p>Connecting ambitious professionals with experienced mentors to accelerate career growth and success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>For Mentees</h4>
+                    <ul>
+                        <li><a href="#">Find a Mentor</a></li>
+                        <li><a href="#">Browse Categories</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Mentors</h4>
+                    <ul>
+                        <li><a href="#">Become a Mentor</a></li>
+                        <li><a href="#">Mentor Resources</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest mentorship tips and opportunities.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MentorHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./mentors.js"></script>
+</body>
+</html>
